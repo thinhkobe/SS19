@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .text-red {
+        color: red;
+      }
+      .text-blue {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading-1"></h1>
+    <h1>BANG USER</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Tên</th>
+          <th>Giới Tính</th>
+          <th>Ngày Sinh</th>
+          <th>địa chỉ</th>
+          <th>Chức Năng</th>
+        </tr>
+      </thead>
+      <tbody id="tbody1">
+        <!-- <tr>
+          <td>1</td>
+          <td>Nguyen van nam</td>
+          <td>nam</td>
+          <td>22-12-2023</td>
+          <td>Ha noi</td>
+        </tr> -->
+      </tbody>
+    </table>
+
+    <h1>BANG NHAN VIEN</h1>
+    <!-- <table border="=1">
+      <thead>
+        <tr>
+          <th>employeeID</th>
+          <th>employeeName</th>
+          <th>gender</th>
+          <th>dateOfBirth</th>
+          <th>image</th>
+          <th>createdAt</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-1">
+        <tr>
+          <td>1</td>
+          <td>tran van A</td>
+          <td>0</td>
+          <td>20-12-2020</td>
+          <td><img src="" alt="ảnh " /></td>
+          <td>today</td>
+        </tr>
+      </tbody>
+    </table> -->
+
+    <ul id="listItem"></ul>
+
+    <h3 id="heading3">
+      Bạn đã có <span style="display: none">Tài Khoản</span>
+    </h3>
+
+    <button class="btn">1</button>
+    <button class="btn">2</button>
+    <button class="btn">3</button>
+    <button class="btn">4</button>
+    <button class="btn">5</button>
+    <button class="btn">6</button>
+    <button class="btn">7</button>
+    <button class="btn">8</button>
+    <button class="btn">9</button>
+
+    <h3 id="heading-4">CSS By js</h3>
+    <button id="btnRed">red</button>
+    <button id="btnBlue">blue</button>
+
+    <button id="hide">ẩn</button>
+    <button id="show">hiện</button>
+
+    <script src="./inner.js"></script>
+
+    <script>
+      let heading4 = document.querySelector("#heading-4");
+      let btnRed = document.getElementById("btnRed");
+      let btnBlue = document.getElementById("btnBlue");
+      let btnhide = document.getElementById("hide");
+      let btnshow = document.getElementById("show");
+
+      btnRed.addEventListener("click", () => {
+        //   heading4.style.color = "red";
+        // thêm class
+        heading4.classList.add("text-red");
+        // xóa class
+        heading4.classList.remove("text-blue");
+      });
+      btnBlue.onclick = () => {
+        heading4.classList.add("text-blue");
+        heading4.classList.remove("text-red");
+        //   kiểm tra xem 1 class có tồn tại trong 1 element k
+        console.log(heading4.classList.contains("text-blue"));
+      };
+      //   ẩn văn bản
+      btnhide.onclick = () => {
+        heading4.style.display = "none";
+      };
+      //   hien van ban
+      btnshow.onclick = () => {
+        heading4.style.display = "block";
+      };
+      //   heading4.style.backgroundColor = "blue";
+    </script>
+  </body>
+</html>

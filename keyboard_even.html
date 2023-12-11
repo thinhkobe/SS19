@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="cancel">cancel</button>
+    <button id="add">add</button>
+
+    <form action="" id="form" style="display: none">
+      <h3>dangki</h3>
+      <label for="" userName></label>
+      <input type="text" />
+    </form>
+    <script>
+      const btnCancel = document.getElementById("cancel");
+      const btnadd = document.getElementById("add");
+      const form = document.getElementById("form");
+
+      window.addEventListener("keydown", (e) => {
+        if (e.keyCode === 9) {
+          form.style.display = "block";
+        }
+        if (e.keyCode === 27) {
+          form.style.display = "none";
+        }
+      });
+      console.log(e);
+    </script>
+  </body>
+</html>

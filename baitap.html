@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thêm mới tài khoản</title>
+    <link rel="stylesheet" href="./baitap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <form action="" method="post">
+      <div class="header">
+        <h2>Thêm mới tài khoản</h2>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="container">
+        <div class="Name">
+          <label for="" class="label-block">Tên</label>
+          <input type="text" class="inputGroup" id="name" />
+        </div>
+        <div class="gender">
+          <label for="">Giới Tính:</label>
+          <div class="gender-item">
+            <div class="genderGroup">
+              <label for="">Nam</label>
+              <input name="gender" type="radio" name="" id="" />
+            </div>
+            <div class="genderGroup">
+              <label for="">Nữ</label>
+              <input name="gender" type="radio" name="" id="" />
+            </div>
+            <div class="genderGroup">
+              <label for="">Khác</label>
+              <input name="gender" type="radio" name="" id="" />
+            </div>
+          </div>
+        </div>
+        <div class="email">
+          <label for="" class="label-block">Email</label>
+          <input type="text" class="inputGroup" id="email" />
+        </div>
+        <div class="birth">
+          <label for="" class="label-block">Ngày sinh</label>
+          <input type="date" class="inputGroup" id="birth" />
+        </div>
+        <div class="password">
+          <label for="" class="label-block">Mật Khẩu</label>
+          <input type="text" class="inputGroup" id="password" />
+        </div>
+        <div>
+          <p>lớp</p>
+          <select name="" id="select" class="class inputGroup">
+            <option value="JV231023">JV231023</option>
+            <option value="JV231024">JV231024</option>
+            <option value="JV231025">JV231025</option>
+            <option value="JV231026">JV231026</option>
+          </select>
+        </div>
+        <div class="address">
+          <label for="" class="label-block">Địa chỉ</label>
+          <input type="text" class="inputGroup" id="address" />
+        </div>
+      </div>
+      <hr />
+      <div class="btn">
+        <button class="btn-item" id="btnCancel" type="reset">Hủy</button>
+        <button class="btn-item" id="btnAdd" type="submit">Thêm</button>
+      </div>
+    </form>
+
+    <script src="./baitap.js"></script>
+  </body>
+</html>

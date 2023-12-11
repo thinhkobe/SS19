@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+form {
+  width: 500px;
+  padding: 20px 24px;
+  border: 1px solid #333;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.Name {
+}
+.label-block {
+  display: block;
+}
+.gender {
+}
+.gender-item {
+  gap: 10px;
+  display: flex;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.genderGroup {
+  align-items: center;
+}
+
+.email {
+}
+
+.birth {
+}
+
+.password {
+}
+
+.class {
+}
+
+.address {
+  grid-column: 1/3;
+}
+
+.btn {
+  display: flex;
+  justify-content: right;
+}
+.btn-item {
+  margin: 10px;
+
+  height: 36px;
+  padding: 8px 16px;
+  min-width: 80px;
+  border: 1px solid #dadada;
+  background-color: #089740;
+  border-radius: 4px;
+}
+.btn-item:hover {
+  border-color: #6bc18d;
+  cursor: pointer;
+}
+
+.inputGroup {
+  width: 100%;
+  padding: 0 16px;
+  border: 1px solid #dadada;
+  height: 36px;
+  border-radius: 4px;
+  margin-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
